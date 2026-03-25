@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poissonnerie Océan Frais</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #0a0a0a;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0096c7;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .produits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .produit {
+            background-color: #caf0f8;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .produit img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile friendly */
+        @media (max-width: 600px) {
+            .produits {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        button.contact-btn {
+            background-color: #00b4d8;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button.contact-btn:hover {
+            background-color: #0077b6;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐟 Poissonnerie Océan Frais</h1>
+    <p>Frais, locaux et délicieux tous les jours</p>
+</header>
+
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#produits">Produits</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="accueil">
+    <h2>Bienvenue</h2>
+    <p>Découvrez nos poissons frais, fruits de mer et spécialités locales. Nous garantissons la qualité et la fraîcheur chaque jour.</p>
+</section>
+
+<section id="produits">
+    <h2>Nos produits</h2>
+    <div class="produits">
+        <div class="produit">
+            <img src="https://via.placeholder.com/200?text=Saumon" alt="Saumon">
+            <h3>Saumon frais</h3>
+            <p>15€/kg</p>
+        </div>
+        <div class="produit">
+            <img src="https://via.placeholder.com/200?text=Crevettes" alt="Crevettes">
+            <h3>Crevettes</h3>
+            <p>12€/kg</p>
+        </div>
+        <div class="produit">
+            <img src="https://via.placeholder.com/200?text=Huîtres" alt="Huîtres">
+            <h3>Huîtres</h3>
+            <p>20€/boîte</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Pour commander ou poser une question :</p>
+    <button class="contact-btn" onclick="window.location.href='https://wa.me/33612345678'">WhatsApp</button>
+    <p>ou appelez-nous au : 06 12 34 56 78</p>
+</section>
+
+<footer>
+    <p>© 2026 Poissonnerie Océan Frais – Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
